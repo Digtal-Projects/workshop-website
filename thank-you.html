@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You | Mechanical Core Workshop</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e3a8a',
+                        accent: '#dc2626',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans antialiased text-gray-800">
+    <main class="min-h-screen flex items-center justify-center bg-gray-50">
+        <div class="text-center p-8 max-w-2xl mx-auto" data-aos="fade-up">
+            <div class="bg-white rounded-lg shadow-xl p-12">
+                <div class="text-accent mb-6">
+                    <i data-feather="check-circle" class="w-16 h-16 mx-auto"></i>
+                </div>
+                <h1 class="text-3xl md:text-4xl font-bold text-primary mb-4">Thank You!</h1>
+                <p class="text-lg mb-8">Your message has been sent successfully. We'll get back to you within 24 hours.</p>
+                <a href="index.html" class="bg-primary hover:bg-blue-900 text-white font-bold py-3 px-8 rounded transition duration-300 inline-flex items-center">
+                    Back to Home <i data-feather="arrow-left" class="ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        AOS.init();
+        feather.replace();
+    </script>
+</body>
+</html>
