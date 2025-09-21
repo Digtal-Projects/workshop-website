@@ -480,21 +480,22 @@
                 });
             });
         });
-        // document.getElementById("contactForm").addEventListener("submit", function (e) {
-        //     e.preventDefault(); // Prevent page reload
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault(); // Prevent page reload
 
-        //     const name = this.name.value;
-        //     const email = this.email.value;
-        //     const message = this.message.value;
+            const name = this.name.value;
+            const email = this.email.value;
+            const message = this.message.value;
 
-        //     const subject = encodeURIComponent("New Message from " + name);
-        //     const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
+            const subject = encodeURIComponent("New Message from " + name);
+            const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nMessage: ${message}`);
 
-        //     // Opens default mail client
-        //     window.location.href = `mailto:prathamesh22299@gmail.com?subject=${subject}&body=${body}`;
+            // Opens default mail client
+            window.location.href = `mailto:prathamesh22299@gmail.com?subject=${subject}&body=${body}`;
 
-        //     // Optional: clear form fields
-        //     this.reset();
+            // Optional: clear form fields
+            this.reset();
+            });
     </script>
 </body>
 
